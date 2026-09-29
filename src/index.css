@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Chakra Petch', sans-serif;
+    --font-sans: 'Inter', sans-serif;
+    --color-pixel-green: #00E676;
+    --color-pixel-green-glow: rgba(0, 230, 118, 0.3);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom utility styles */
+.pixel-border {
+  border: 1px solid #262626;
+}
+
+.pixel-glow {
+  box-shadow: 0 0 20px rgba(0, 230, 118, 0.25);
+}
+
+.pixel-glow-sm {
+  box-shadow: 0 0 10px rgba(0, 230, 118, 0.2);
+}
+
+.pixel-glow-lg {
+  box-shadow: 0 0 30px rgba(0, 230, 118, 0.35);
+}
+
+.pixel-card {
+  background-color: rgba(17, 17, 17, 0.8);
+  border: 1px solid #262626;
+  backdrop-filter: blur(8px);
+}
+
+.pixel-card:hover {
+  border-color: rgba(0, 230, 118, 0.4);
+}
+
+/* Pixel dot corner accents */
+.pixel-corner-tl::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 6px;
+  height: 6px;
+  background-color: #00E676;
+}
+
+.pixel-corner-br::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 6px;
+  height: 6px;
+  background-color: #00E676;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00E676;
+}

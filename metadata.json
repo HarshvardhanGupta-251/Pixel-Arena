@@ -1,0 +1,6 @@
+{
+  "name": "Pixel Arena - Multi-Sport Turf Booking",
+  "description": "Premier multi-sport turf arena for cricket, pickleball, badminton, and volleyball with instant UPI booking, live court availability, cafe orders, and tournaments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
