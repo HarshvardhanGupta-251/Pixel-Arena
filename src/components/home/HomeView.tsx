@@ -1,5 +1,6 @@
 import React from "react";
 import GroundLayout from "@/components/shared/GroundLayout";
+import Shuffle from "@/components/ui/Shuffle";
 import { arenaStore } from "@/lib/store";
 import { SportType } from "@/types";
 import { formatINR } from "@/lib/utils";
@@ -99,10 +100,24 @@ export function HomeView({
             </span>
           </div>
 
-          {/* Main Title */}
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-heading text-white tracking-tight uppercase max-w-4xl mx-auto leading-none">
-            ENGINEERED FOR <span className="text-[#00E676] drop-shadow-[0_0_30px_rgba(0,230,118,0.4)]">CHAMPIONS</span>. PLAY UNDER FLOODLIGHTS.
-          </h1>
+          {/* Main Title with React Bits Shuffle Animation */}
+          <div className="max-w-5xl mx-auto flex justify-center">
+            <Shuffle
+              text="ENGINEERED FOR CHAMPIONS. PLAY UNDER FLOODLIGHTS."
+              tag="h1"
+              className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-heading text-white tracking-tight uppercase leading-none drop-shadow-[0_0_35px_rgba(0,230,118,0.25)] text-center cursor-default"
+              shuffleDirection="right"
+              duration={0.35}
+              animationMode="evenodd"
+              shuffleTimes={2}
+              ease="power3.out"
+              stagger={0.025}
+              threshold={0.1}
+              triggerOnce={true}
+              triggerOnHover={true}
+              respectReducedMotion={true}
+            />
+          </div>
 
           {/* Sports Sub-line */}
           <p className="text-sm sm:text-lg text-neutral-300 font-heading font-semibold uppercase tracking-widest max-w-2xl mx-auto">
