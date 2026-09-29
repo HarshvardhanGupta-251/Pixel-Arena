@@ -242,7 +242,7 @@ export function CourtBooking({
               title="Click to view full Ground Blueprint"
             >
               <img
-                src="/images/ground-blueprint.svg"
+                src="/images/ground-blueprint.jpg"
                 alt="Ground Layout"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
@@ -324,7 +324,7 @@ export function CourtBooking({
             <div className="p-4 md:p-6 overflow-y-auto flex-1 flex flex-col md:flex-row items-center justify-center gap-6 bg-[#040404]">
               <div className="w-full max-w-md bg-neutral-950 rounded-xl overflow-hidden border border-neutral-800 shadow-2xl p-2">
                 <img
-                  src="/images/ground-blueprint.svg"
+                  src="/images/ground-blueprint.jpg"
                   alt="Pixel Arena Ground Architecture"
                   className="w-full h-auto rounded-lg shadow-inner"
                 />
