@@ -76,7 +76,7 @@ export function Navbar({
           onClick={() => onNavigate("home")}
           className="cursor-pointer flex items-center gap-3 transition-transform hover:scale-[1.02]"
         >
-          <Logo size="md" />
+          <Logo size="sm" />
         </div>
 
         {/* Desktop Navigation Links */}

@@ -9,7 +9,7 @@ interface LogoProps {
 
 export function Logo({ className, size = "md", showTagline = false }: LogoProps) {
   const sizeMap = {
-    sm: "h-16",
+    sm: "h-8",
     md: "h-28",
     lg: "h-36",
     xl: "h-44",
