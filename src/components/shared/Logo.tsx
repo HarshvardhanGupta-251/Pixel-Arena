@@ -18,7 +18,7 @@ export function Logo({ className, size = "md", showTagline = false }: LogoProps)
   return (
     <div className={cn("inline-flex flex-col items-center select-none group", className)}>
       <img
-        src="/images/Pixel_Arena_Logo.svg"
+        src="/images/Logo .svg"
         alt="Pixel Arena"
         className={cn("w-auto object-contain", sizeMap[size])}
         draggable={false}
